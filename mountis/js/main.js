@@ -1671,18 +1671,83 @@ $window.on('resize', function(){
 //end of IIFE function
 })(jQuery);
 
+ // Simulate today's count
+ document.getElementById('todayCount').textContent = Math.floor(Math.random() * 10);
+
+ // Draw basic line graph
+ const ctx = document.getElementById('visitorChart').getContext('2d');
+ const points = [4, 3, 6, 3, 4, 4, 3]; // Mock data
+
+ ctx.strokeStyle = "#3e6ef2";
+ ctx.lineWidth = 2;
+ ctx.beginPath();
+
+ points.forEach((p, i) => {
+   const x = i * 25;
+   const y = 60 - (p * 8); // scaling
+   if (i === 0) ctx.moveTo(x, y);
+   else ctx.lineTo(x, y);
+ });
+
+ ctx.stroke();
+
+ // Draw points
+ ctx.fillStyle = "#3e6ef2";
+ points.forEach((p, i) => {
+   const x = i * 25;
+   const y = 60 - (p * 8);
+   ctx.beginPath();
+   ctx.arc(x, y, 2.5, 0, Math.PI * 2);
+   ctx.fill();
+ });
+
 //  FINAL TOUCHES
 
-  function updateTicker() {
+// function updateTime() {
+// 	const timeSpan = document.getElementById("time");
+// 	const now = new Date();
+// 	timeSpan.textContent = now.toLocaleString();
+//   }
+
+//   function updateLocation() {
+// 	const locationSpan = document.getElementById("location");
+
+// 	if (navigator.geolocation) {
+// 	  navigator.geolocation.getCurrentPosition(
+// 		position => {
+// 		  const lat = position.coords.latitude.toFixed(2);
+// 		  const lon = position.coords.longitude.toFixed(2);
+// 		  locationSpan.textContent = `Lan ${lat},   ${lon}`;
+// 		},
+// 		error => {
+// 		  console.error("Geolocation error:", error.message);
+// 		  locationSpan.textContent = `Location not available`;
+// 		}
+// 	  );
+// 	} else {
+// 	  locationSpan.textContent = `Geolocation not supported`;
+// 	}
+//   }
+
+//   // Update time every second
+//   setInterval(updateTime, 1000);
+//   updateTime();
+
+//   // Update location every 30 seconds
+//   updateLocation();
+//   setInterval(updateLocation, 30000);
+  
+function updateTicker() {
     const ticker = document.getElementById("ticker");
     const now = new Date();
-    const dateTime = now.toLocaleString();
+    const dateTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+
 
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
         const lat = position.coords.latitude.toFixed(2);
-        const lon = position.coords.longitude.toFixed(2);
-        ticker.textContent = `📍 Location: ${lat}, ${lon} | ⏰ ${dateTime}`;
+        const lon = position.coords.longitude.toFixed(2)
+        ticker.textContent = `📍 ${lat}, ${lon} | ⏰ ${dateTime}`;
       }, () => {
         ticker.textContent = `⏰ ${dateTime} | Location not available`;
       });
@@ -1691,7 +1756,5 @@ $window.on('resize', function(){
     }
   }
 
-  setInterval(updateTicker, 1000);
+  setInterval(updateTicker, 10000);
   updateTicker();
-
-

@@ -14,7 +14,7 @@
 	<![endif]-->
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- 
+
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -23,19 +23,15 @@
 	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
 	<script src="js/vendor/modernizr-custom.js"></script>
 
-	<!--[if lt IE 9]>
+	
 		<script src="js/vendor/html5shiv.min.js"></script>
 		<script src="js/vendor/respond.min.js"></script>
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
-	<![endif]-->
+	<![endif] -->
 
 </head>
 
 <body>
-	<!--[if lt IE 9]>
-		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
-	<![endif]-->
-
 
 	<!-- this div is ideally for the prre-loading  page -->
 	<div class="preloader">
@@ -50,7 +46,8 @@
 		<div class="widget widget_search">
 			<form method="get" class="searchform search-form" action="../index.html">
 				<div class="form-group">
-					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+						id="modal-search-input">
 				</div>
 				<button type="submit" class="">Submit</button>
 			</form>
@@ -60,12 +57,7 @@
 	<!-- Unyson messages modal -->
 	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
 		<div class="fw-messages-wrap ls p-normal">
-			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-			<!--
-		<ul class="list-unstyled">
-			<li>Message To User</li>
-		</ul>
-		-->
+ 
 
 		</div>
 	</div><!-- eof .modal -->
@@ -93,7 +85,6 @@
 								</div>
 							</div>
 
-							
 
 							<div class="col-md-4 text-center hidden-below-md">
 								<a href="index.html" class="logo">
@@ -101,20 +92,26 @@
 								</a>
 							</div>
 							<div class="col-12 col-md-4 col-xl-4">
-								<div class="media">
-									<div class="media-body align-items-end">
-										<span class="small-text">our emailaddress</span>
-										<p><a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="610c0e140f150812210e07070802044f020e0c">[email&#160;protected]</a></p>
+
+								<div class="visitor-counter">
+									<div>
+										<div class="visitor-icon"></div>
+										<h4> <i class="fa-solid fa-chart-simple"></i> VISITORS</h4>
 									</div>
-									<span class="icon-styled ">
-										<i class="fa color-main2 fa-pencil"></i>
-									</span>
+
+									<div class="counts">
+										<div class="label">TODAY <span class="number" id="todayCount">0</span></div>
+										<canvas id="visitorChart" width="160" height="35"></canvas>
+										<div class="label">YESTERDAY <span class="number">6</span></div>
+									</div>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</section>
 				<!--eof topline-->
+
 				<!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
 				<header class="page_header ls justify-nav-center">
 					<div class="container-fluid">
@@ -137,7 +134,9 @@
 									<div class="media">
 										<div class="media-body align-items-end">
 											<span class="small-text">our emailaddress</span>
-											<p><a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="4e23213b203a273d0e212828272d2b602d2123">[email&#160;protected]</a></p>
+											<p><a href="../cdn-cgi/l/email-protection.html" class="__cf_email__"
+													data-cfemail="4e23213b203a273d0e212828272d2b602d2123">[email&#160;protected]</a>
+											</p>
 										</div>
 										<span class="icon-styled ">
 											<i class="fa color-main2 fa-pencil"></i>
@@ -174,11 +173,11 @@
 										</li>
 
 										<li>
-											<a href="#team">Team</a>
+											<a href="#team">Shelter</a>
 										</li>
 
 										<li>
-											<a href="#quote">quotes</a>
+											<a href="#quote">Hazards</a>
 										</li>
 
 										<!-- contacts -->
@@ -203,17 +202,22 @@
 
 			</div>
 
+			<!-- Landing Section.  -->
 			<section class="page_slider">
 				<div class="flexslider vertical home_slider">
 					<ul class="slides">
 						<li class="ds s-overlay cover-image text-center">
 							<span class="social-icons animate" data-animation="fadeInUp">
-								<a href="#" class="fa fa-facebook bg-light border-icon rounded-icon" title="facebook"></a>
+								<a href="#" class="fa fa-facebook bg-light border-icon rounded-icon"
+									title="facebook"></a>
 								<a href="#" class="fa fa-twitter bg-light border-icon rounded-icon" title="twitter"></a>
-								<a href="#" class="fa fa-google-plus bg-light border-icon rounded-icon" title="google"></a>
+								<a href="#" class="fa fa-google-plus bg-light border-icon rounded-icon"
+									title="google"></a>
 							</span>
 							<video muted loop id="myVideo">
-								<source src="https://html.modernwebtemplates.com/mountis/images/Travel_Stock_Footage_Reel-HD_4K_Royalty-free.mp4" data-time="74" type="video/mp4">
+								<source
+									src="https://html.modernwebtemplates.com/mountis/images/Travel_Stock_Footage_Reel-HD_4K_Royalty-free.mp4"
+									data-time="74" type="video/mp4">
 							</video>
 							<img src="images/slide01.jpg" alt="img">
 							<div class="container">
@@ -222,14 +226,20 @@
 										<div class="intro_layers_wrapper intro_text_bottom">
 											<div class="intro_layers">
 												<div class="intro-layer">
-													<span class="small-text color-main3">we are hiking and outdoor club</span>
+													<span class="small-text color-main3">Ready to Explore? <br>
+
+														Welcome to the World of Mountaineering</span>
 												</div>
 												<div class="intro-layer mt-10">
-													<h2><span class="semibold">Let's Enjoy</span> the Wonders of the Nature <span class="semibold">Together</span></h2>
+
+													<h2><span class="semibold">Explore </span>the adventure, techniques,
+														<span class="semibold"> and safety behind the climb</span></h2>
 												</div>
 												<div class="divider-35 hidden-below-sm"></div>
 												<div class="intro-layer hidden-below-sm">
-													<p>Prosciutto tail venison burgdoggen hamburger frankfurter pork picanha landjaeger. Chicken ham hock picanha meatloaf kielbasa sausage bresaol</p>
+													<p>Mountaineering offers unforgettable experiences — from local
+														hills to towering peaks. <br>
+														Be prepared, stay safe, and keep climbing!</p>
 												</div>
 												<div class="divider-xl-50"></div>
 												<div class="divider-30 hidden-xl"></div>
@@ -245,98 +255,39 @@
 								</div><!-- eof .row -->
 							</div><!-- eof .container-fluid -->
 						</li>
-						<li class="ds s-overlay cover-image text-center">
-							<span class="social-icons animate" data-animation="fadeInUp">
-								<a href="#" class="fa fa-facebook bg-light border-icon rounded-icon" title="facebook"></a>
-								<a href="#" class="fa fa-twitter bg-light border-icon rounded-icon" title="twitter"></a>
-								<a href="#" class="fa fa-google-plus bg-light border-icon rounded-icon" title="google"></a>
-							</span>
-							<img src="images/slide02.jpg" alt="img">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="intro_layers_wrapper intro_text_bottom">
-											<div class="intro_layers">
-												<div class="intro-layer">
-													<span class="small-text color-main3">we are hiking and outdoor club</span>
-												</div>
-												<div class="intro-layer mt-10">
-													<h2><span class="semibold">It Feels Good</span> to Be Lost In
-														The Right <span class="semibold">Direction</span></h2>
-												</div>
-												<div class="divider-35 hidden-below-sm"></div>
-												<div class="intro-layer hidden-below-sm">
-													<p>Prosciutto tail venison burgdoggen hamburger frankfurter pork picanha landjaeger. Chicken ham hock picanha meatloaf kielbasa sausage bresaol</p>
-												</div>
-												<div class="divider-xl-50"></div>
-												<div class="divider-30 hidden-xl"></div>
-												<div class="intro-layer ">
-													<a href="about.html" class="btn btn-maincolor">about us</a>
-												</div>
-											</div> <!-- eof .intro_layers -->
-										</div> <!-- eof .intro_layers_wrapper -->
-									</div> <!-- eof .col-* -->
-								</div><!-- eof .row -->
-							</div><!-- eof .container-fluid -->
-						</li>
-						<li class="ds s-overlay cover-image text-center">
-							<span class="social-icons animate" data-animation="fadeInUp">
-								<a href="#" class="fa fa-facebook bg-light border-icon rounded-icon" title="facebook"></a>
-								<a href="#" class="fa fa-twitter bg-light border-icon rounded-icon" title="twitter"></a>
-								<a href="#" class="fa fa-google-plus bg-light border-icon rounded-icon" title="google"></a>
-							</span>
-							<img src="images/slide03.jpg" alt="img">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="intro_layers_wrapper intro_text_bottom">
-											<div class="intro_layers">
-												<div class="intro-layer">
-													<span class="small-text color-main3">we are hiking and outdoor club</span>
-												</div>
-												<div class="intro-layer mt-10">
-													<h2><span class="semibold">It's Time</span> to Start Your
-														Amazing <span class="semibold">Adventures</span></h2>
-												</div>
-												<div class="divider-35 hidden-below-sm"></div>
-												<div class="intro-layer hidden-below-sm">
-													<p>Prosciutto tail venison burgdoggen hamburger frankfurter pork picanha landjaeger. Chicken ham hock picanha meatloaf kielbasa sausage bresaol</p>
-												</div>
-												<div class="divider-xl-50"></div>
-												<div class="divider-30 hidden-xl"></div>
-												<div class="intro-layer ">
-													<a href="booking.html" class="btn btn-maincolor">book trip</a>
-												</div>
-											</div> <!-- eof .intro_layers -->
-										</div> <!-- eof .intro_layers_wrapper -->
-									</div> <!-- eof .col-* -->
-								</div><!-- eof .row -->
-							</div><!-- eof .container-fluid -->
-						</li>
+
 					</ul>
 				</div> <!-- eof flexslider -->
 			</section>
 
-			<section id="about" class="ls s-pt-70 s-pb-65 s-pt-md-120 s-pb-md-105 s-pb-xl-85 s-pt-xl-65 about-section overflow-visible">
+
+			<!-- Home section  -->
+			<section id="about"
+				class="ls s-pt-70 s-pb-65 s-pt-md-120 s-pb-md-105 s-pb-xl-85 s-pt-xl-65 about-section overflow-visible">
 				<div class="divider-80 d-none d-xl-block"></div>
 				<div class="image_cover"></div>
 				<div class="container">
 					<div class="row d-flex justify-content-start">
 						<div class="col-12 col-lg-7 col-xl-6 ">
-							<p class="top-subtitle">Discover story</p>
-							<h3 class="section-heading">Of the Mountis Trip <span class="back">story</span></h3>
-							<p>
-								Kevin ribeye pork loin tenderloin, <span class="underline">spare ribs corned beef chicken.</span> Pancetta pork venison cupim bresaola.
-							</p>
+							<p class="top-subtitle">Discover history</p>
+							<h3 class="section-heading"> of Mountaineering<span class="back">story</span></h3>
+
 
 							<p class="mt--5">
-								Rump shoulder ribeye. Ribeye turducken pastrami, hamburger shoulder <span class="underline">burgdoggen cupim</span> turkey. Jerky beef ribs biltong cupim turducken ribeye swine kevin pork chop shankle frankfurter. Turkey cupim alcatra, pork loin turducken. <span class="links-maincolor3"><a class="more text-uppercase" href="blog-single-@@type.html">read more<i class="fa fa-level-down" aria-hidden="true"></i></a></span>
+								Mountaineering dates back centuries, with modern climbing beginning in 1786 after the
+								first successful ascent of Mont Blanc. The 19th century saw the Golden Age of Alpinism,
+								and in 1953, the world celebrated the first summit of Everest by Edmund Hillary and
+								Tenzing Norgay.
+								<span class="links-maincolor3"><a class="more text-uppercase" href="readmore.html">read
+										more<i class="fa fa-level-down" aria-hidden="true"></i></a></span>
 							</p>
-
+							<h2 class="section-heading">Techniques & Skills</h2>
 							<ul class="list-styled color-darkgrey mt-30">
-								<li>Cruising Destination Ideas</li>
-								<li>Deluxe Moderate And Value Disney</li>
-								<li>France On The Road</li>
+								<li>Rope techniques for safety and support.</li>
+								<li>Footwork for various terrains.</li>
+								<li>Navigation using maps and GPS.</li>
+								<li>Anchoring gear for security.</li>
+								<li>Self-arrest to stop slides on icy slopes.</li>
 							</ul>
 						</div>
 						<div class="divider-60 d-none d-xl-block"></div>
@@ -344,6 +295,7 @@
 				</div>
 			</section>
 
+			<!-- Gallery Section  -->
 			<section id="gallery" class="ls ms gallery-section  c-gutter-0 c-mb-0">
 				<div class="container-fluid">
 					<div class="row isotope-wrapper" data-filters=".gallery-filters">
@@ -357,7 +309,8 @@
 								<div class="gallery-header stamp">
 									<div class="text-left content">
 										<p class="top-subtitle">photo from our clients and their trips</p>
-										<h3 class="section-heading">From Our Large Gallery<span class="back">Photos</span></h3>
+										<h3 class="section-heading">From Our Large Gallery<span
+												class="back">Photos</span></h3>
 										<div class="filters gallery-filters small-text text-lg-right">
 											<a href="#" data-filter="*" class="active selected">All</a>
 											<a href="#" data-filter=".hikes">Day Hikes</a>
@@ -560,7 +513,8 @@
 								</div>
 								<div class="gallery-header stamp view-more">
 									<div class="text-left">
-										<a class="text-uppercase" href="gallery-title-4-cols-fullwidth.html">view more photos</a>
+										<a class="text-uppercase" href="gallery-title-4-cols-fullwidth.html">view more
+											photos</a>
 									</div>
 								</div>
 							</div>
@@ -570,36 +524,41 @@
 					<div class="mt-30 hidden-above-md"></div>
 					<div class="row">
 						<div class="col-12 text-center d-md-none">
-							<a class="btn btn-maincolor mb-0" href="gallery-title-4-cols-fullwidth.html">view more photos</a>
+							<a class="btn btn-maincolor mb-0" href="gallery-title-4-cols-fullwidth.html">view more
+								photos</a>
 						</div>
 					</div>
 					<div class="mb-80 hidden-above-md"></div>
 				</div>
 			</section>
 
-			<section id="team" class="ls team-section s-pt-65 s-pb-80 s-pb-md-120 s-pt-md-105 s-pb-xl-160 s-pt-xl-145 c-mb-30">
+			<!-- Shelter Section -->
+
+			<section id="team"
+				class="ls team-section s-pt-65 s-pb-80 s-pb-md-120 s-pt-md-105 s-pb-xl-160 s-pt-xl-145 c-mb-30">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 text-center">
-							<p class="top-subtitle">Amazing staff</p>
-							<h3 class="section-heading d-inline-block">Meet Our Team <span class="back">team</span></h3>
+							<p class="top-subtitle">Sheltering in the Mountains</p>
+							<h3 class="section-heading d-inline-block">No ideas for shelter? <span
+									class="back">Shelter</span></h3>
 							<div class="mt--15"></div>
 						</div>
 						<div class="col-xl-3 col-md-6 col-12">
 							<div class="vertical-item content-padding text-center">
 								<div class="item-media">
-									<img src="images/team/01.jpg" alt="img">
+									<img src="./images/campfire-tent-nature.jpg" alt="img">
 									<div class="media-links">
-										<a class="abs-link" title="" href="team-single.html"></a>
+										<!-- <a class="abs-link" title="" href="team-single.html"></a> -->
 									</div>
 								</div>
 								<div class="item-content hero-bg">
 									<h5>
-										<a href="team-single.html">Connor Willis</a>
+										<a href="team-single.html">High-Altitude Tents</a>
 									</h5>
 
 									<p class="small-text mb-2 color-main3">
-										Cortina, Italy
+										Withstands snow, wind, and extreme cold.
 									</p>
 									<p class="social-icons">
 
@@ -615,18 +574,19 @@
 						<div class="col-xl-3 col-md-6 col-12">
 							<div class="vertical-item content-padding text-center">
 								<div class="item-media">
-									<img src="images/team/02.jpg" alt="img">
+									<img src="./images/Man Builds the WARMEST IGLOO Survival Shelter Ever!.jpg"
+										alt="img" style="">
 									<div class="media-links">
 										<a class="abs-link" title="" href="team-single.html"></a>
 									</div>
 								</div>
 								<div class="item-content hero-bg">
 									<h5>
-										<a href="team-single.html">Brent Wright</a>
+										<a href="team-single.html">Snow Shelters</a>
 									</h5>
 
 									<p class="small-text mb-2 color-main3">
-										Chamon, France
+										Quick emergency protection
 									</p>
 									<p class="social-icons">
 
@@ -642,18 +602,18 @@
 						<div class="col-xl-3 col-md-6 col-12">
 							<div class="vertical-item content-padding text-center">
 								<div class="item-media">
-									<img src="images/team/03.jpg" alt="img">
+									<img src="./images/young-family-enjoying-trips.jpg" alt="img">
 									<div class="media-links">
 										<a class="abs-link" title="" href="team-single.html"></a>
 									</div>
 								</div>
 								<div class="item-content hero-bg">
 									<h5>
-										<a href="team-single.html">Joshua Mendez</a>
+										<a href="team-single.html">Mountain Huts</a>
 									</h5>
 
 									<p class="small-text mb-2 color-main3">
-										Kitzbüh, Austria
+										Pre-established shelters in popular climbing zones
 									</p>
 									<p class="social-icons">
 
@@ -669,18 +629,18 @@
 						<div class="col-xl-3 col-md-6 col-12">
 							<div class="vertical-item content-padding text-center">
 								<div class="item-media">
-									<img src="images/team/04.jpg" alt="img">
+									<img src="./images/Sorry! Access denied.jpg" alt="img">
 									<div class="media-links">
 										<a class="abs-link" title="" href="team-single.html"></a>
 									</div>
 								</div>
 								<div class="item-content hero-bg">
 									<h5>
-										<a href="team-single.html">Andre Saunders</a>
+										<a href="team-single.html">Bivy Sacks</a>
 									</h5>
 
 									<p class="small-text mb-2 color-main3">
-										Bentin, USA
+										Lightweight, personal protection
 									</p>
 									<p class="social-icons">
 
@@ -697,24 +657,29 @@
 					<div class="mt--30"></div>
 				</div>
 			</section>
-
-			<section id="quote" class="ds s-pt-80 s-pb-130 s-pt-md-115 s-pb-md-195 s-pt-xl-125 s-pb-xl-160 s-parallax s-overlay  testimonials-section">
+			<!--  HAZARDS -->
+			<section id="quote"
+				class="ds s-pt-80 s-pb-130 s-pt-md-115 s-pb-md-195 s-pt-xl-125 s-pb-xl-160 s-parallax s-overlay  testimonials-section">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<div class="owl-carousel" data-loop="false" data-margin="30" data-nav="false" data-dots="true" data-center="false" data-items="1" data-autoplay="true" data-responsive-xs="1" data-responsive-sm="1" data-responsive-md="1" data-responsive-lg="1">
+							<div class="owl-carousel" data-loop="false" data-margin="30" data-nav="false"
+								data-dots="true" data-center="false" data-items="1" data-autoplay="true"
+								data-responsive-xs="1" data-responsive-sm="1" data-responsive-md="1"
+								data-responsive-lg="1">
 								<div class="row">
 									<div class="col-12 col-xl-6">
+										<h3 class="section-heading"> Common Hazards<span class="back">Safety</span></h3>
 										<blockquote class="quote-item text-center">
-											<h5>Elmer Morrison</h5>
-											<p class="small-text color-main3">
+											<h5>Avalanches:</h5>
+											<!-- <p class="small-text color-main3">
 												Manager
-											</p>
+											</p> -->
 
 											<span class="quote-icon"><img src="images/quote.png" alt="img"></span>
 
 											<p>
-												Bresaola pancetta jowl turkey shank, chuck porchetta tenderloin hamburger picanha ground round!
+												Rapid snow slides that can be deadly.
 											</p>
 											<div class="divider-30 hidden-above-md"></div>
 											<div class="divider-30 hidden-below-md"></div>
@@ -724,22 +689,22 @@
 										</blockquote>
 									</div>
 									<div class="col-lg-6 d-none d-xl-block">
-										<img class="pl-lg-3" src="images/quote_1.jpg" alt="img">
+										<img class="pl-lg-3" src="images/► © Alex Vision •.jpg" alt="img">
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-12 col-xl-6">
+										<h3 class="section-heading"> Common Hazards<span class="back">Safety</span></h3>
 										<blockquote class="quote-item text-center">
-											<h5>Andre Franklin</h5>
-											<p class="small-text color-main3">
+											<h5>Weather Extremes:</h5>
+											<!-- <p class="small-text color-main3">
 												Manager
-											</p>
+											</p> -->
 
 											<span class="quote-icon"><img src="images/quote.png" alt="img"></span>
 
 											<p>
-												Strip steak alcatra chuck rump cow tri-tip short loin fatback pancetta jowl pork belly doner short ribs steak alcatra.
-											</p>
+												Sudden storms, freezing temperatures, and lightning </p>
 											<div class="divider-30 hidden-above-md"></div>
 											<div class="divider-30 hidden-below-md"></div>
 											<div>
@@ -748,21 +713,23 @@
 										</blockquote>
 									</div>
 									<div class="col-lg-6 d-none d-xl-block">
-										<img class="pl-lg-3" src="images/quote_2.jpg" alt="img">
+										<img class="pl-lg-3" src="images/Bad Luck Bryan takes up mountain climbing_.jpg"
+											alt="img">
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-12 col-xl-6">
+										<h3 class="section-heading"> Common Hazards<span class="back">Safety</span></h3>
 										<blockquote class="quote-item text-center">
-											<h5>Mittie Robertson</h5>
-											<p class="small-text color-main3">
-												Manager
+											<h5>Crevasses:</h5>
+											<!-- <p class="small-text color-main3">
+												Manager -->
 											</p>
 
 											<span class="quote-icon"><img src="images/quote.png" alt="img"></span>
 
 											<p>
-												Tail strip steak beef pancetta short loin pork burgdoggen doner venison meatball turducken steak beef pancetta.
+												Hidden gaps in glaciers that can cause serious injury.
 											</p>
 											<div class="divider-30 hidden-above-md"></div>
 											<div class="divider-30 hidden-below-md"></div>
@@ -772,7 +739,8 @@
 										</blockquote>
 									</div>
 									<div class="col-lg-6 d-none d-xl-block">
-										<img class="pl-lg-3" src="images/quote_3.jpg" alt="img">
+										<img class="pl-lg-3" src="images/443e008e-f2b2-4da0-b7a8-bce7de96cfad.jpg"
+											alt="img">
 									</div>
 								</div>
 							</div>
@@ -781,13 +749,16 @@
 				</div>
 			</section>
 
-			<section id="trips" class="ls section-trips routs-main routs s-py-80 s-py-md-120 s-py-xl-160 c-gutter-0 container-px-5">
+			<!-- Trips Section  -->
+			<section id="trips"
+				class="ls section-trips routs-main routs s-py-80 s-py-md-120 s-py-xl-160 c-gutter-0 container-px-5">
 				<div class="mt--15"></div>
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-12 text-center">
 							<p class="top-subtitle">Discover Our</p>
-							<h3 class="section-heading d-inline-block">Featured Trips<span class="back">Trips</span></h3>
+							<h3 class="section-heading d-inline-block">Featured Trips<span class="back">Trips</span>
+							</h3>
 						</div>
 						<div class="divider-10 hidden-xs hidden-sm"></div>
 						<div class="col-12">
@@ -834,7 +805,10 @@
 								</div>
 							</div>
 							<div class="col-12 c-gutter-0">
-								<div class="owl-carousel" data-loop="false" data-margin="0" data-nav="true" data-dots="false" data-center="false" data-items="3" data-autoplay="true" data-responsive-xs="1" data-responsive-sm="2" data-responsive-md="3" data-responsive-lg="4" data-filters=".gallery-filters">
+								<div class="owl-carousel" data-loop="false" data-margin="0" data-nav="true"
+									data-dots="false" data-center="false" data-items="3" data-autoplay="true"
+									data-responsive-xs="1" data-responsive-sm="2" data-responsive-md="3"
+									data-responsive-lg="4" data-filters=".gallery-filters">
 									<div class="vertical-item gallery-title text-center  private driving">
 										<div class="price">
 											<span>from 320$</span>
@@ -1477,6 +1451,7 @@
 				<div class="mt--15"></div>
 			</section>
 
+			<!-- News section  -->
 			<section id="news" class="ls section-news s-pb-80 s-pb-md-120 s-pb-xl-160">
 				<div class="container">
 					<div class="row">
@@ -1490,7 +1465,7 @@
 								<img src="images/news_bg.jpg" alt="img">
 								<div class="item-content">
 									<h5>
-										Choose The Perfect Accommodations
+										Choose The Perfect Site
 									</h5>
 									<p class="item-meta flex-wrap d-flex ">
 										<span><i class="fa fa-calendar color-main3"></i>19 mar, 18 </span>
@@ -1505,24 +1480,29 @@
 									<div class="card-header post side-item" role="tab" id="collapse01_header">
 										<div class="item-wrap">
 											<div class="item-media">
-												<img src="images/events/comment_4.jpg" alt="img">
+												<img src="images/closeup-shot-many-colorful-climbing-carabiners-knots-wooden-surface.jpg"
+													alt="img" style="height: 80px; width: 90px;">
 											</div>
 										</div>
 
 										<div class="item-content">
 											<h5>
-												<a class="collapsed" data-toggle="collapse" href="#collapse01" aria-expanded="false" aria-controls="collapse01">Become A Travel Pro In One</a>
+												<a class="collapsed" data-toggle="collapse" href="#collapse01"
+													aria-expanded="false" aria-controls="collapse01"><strong>Smart
+														Gear</strong></a>
 											</h5>
 
 											<p class="item-meta flex-wrap d-flex ">
-												<span><i class="fa fa-calendar color-main3"></i>20 mar, 18 </span>
+												<span><i class="fa fa-calendar color-main3"></i>26 mar, 25 </span>
 											</p>
 										</div>
 									</div>
 
-									<div id="collapse01" class="collapse show" role="tabpanel" aria-labelledby="collapse01_header" data-parent="#accordion01">
+									<div id="collapse01" class="collapse show" role="tabpanel"
+										aria-labelledby="collapse01_header" data-parent="#accordion01">
 										<div class="card-body">
-											Meatloaf frankfurter pig beef ribs, pork beef tri-tip venison chuck t-bone pork chop. Pork chop picanha venison meatball. Meatloaf turducken pork loin.
+											<p> GPS-enabled helmets, smartwatches, and wearable sensors now track vitals
+												and navigation in real time.</p>
 										</div>
 									</div>
 								</div>
@@ -1530,25 +1510,28 @@
 									<div class="card-header post side-item" role="tab" id="collapse02_header">
 										<div class="item-wrap">
 											<div class="item-media">
-												<img src="images/events/comment_5.jpg" alt="img">
+												<img src="images/Weather-App_png by Sophinie 🍵.jpg" alt="img"
+													style="height: 80px; width: 90px;">
 											</div>
 										</div>
 
 										<div class="item-content">
 											<h5>
-												<a class="collapsed" data-toggle="collapse" href="#collapse02" aria-expanded="false" aria-controls="collapse02">Vacation Home Rental Success</a>
+												<a class="collapsed" data-toggle="collapse" href="#collapse02"
+													aria-expanded="false" aria-controls="collapse02"><strong>Advanced
+														Weather Prediction</strong> </a>
 											</h5>
 
 											<p class="item-meta flex-wrap d-flex ">
-												<span><i class="fa fa-calendar color-main3"></i>22 mar, 18 </span>
+												<span><i class="fa fa-calendar color-main3"></i>26 mar, 25 </span>
 											</p>
 										</div>
 									</div>
-									<div id="collapse02" class="collapse" role="tabpanel" aria-labelledby="collapse02_header" data-parent="#accordion01">
+									<div id="collapse02" class="collapse" role="tabpanel"
+										aria-labelledby="collapse02_header" data-parent="#accordion01">
 										<div class="card-body">
-											Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-											assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-											cred nesciunt sapiente ea proident.
+											<p>Enhanced forecasting tools help mountaineers better prepare for sudden or
+												extreme conditions.</p>
 										</div>
 									</div>
 								</div>
@@ -1556,25 +1539,28 @@
 									<div class="card-header post side-item" role="tab" id="collapse03_header">
 										<div class="item-wrap">
 											<div class="item-media">
-												<img src="images/events/comment_6.jpg" alt="img">
+												<img src="images/military-it-professional-gathers-intelligence-from-world-map-projection.jpg"
+													alt="img" style="height: 80px; width: 90px;">
 											</div>
 										</div>
 
 										<div class="item-content">
 											<h5>
-												<a class="collapsed" data-toggle="collapse" href="#collapse03" aria-expanded="false" aria-controls="collapse03">Como Mantener Tu Salud </a>
+												<a class="collapsed" data-toggle="collapse" href="#collapse03"
+													aria-expanded="false" aria-controls="collapse03"><strong>AI Route
+														Mapping</strong> </a>
 											</h5>
 
 											<p class="item-meta flex-wrap d-flex ">
-												<span><i class="fa fa-calendar color-main3"></i>27 mar, 18 </span>
+												<span><i class="fa fa-calendar color-main3"></i>24 mar, 25 </span>
 											</p>
 										</div>
 									</div>
-									<div id="collapse03" class="collapse" role="tabpanel" aria-labelledby="collapse03_header" data-parent="#accordion01">
+									<div id="collapse03" class="collapse" role="tabpanel"
+										aria-labelledby="collapse03_header" data-parent="#accordion01">
 										<div class="card-body">
-											Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-											probably haven't heard of them accusamus labore sustainable sunt aliqua put a bird on it
-											squid single-origin coffee shoreditch et.
+											<p>Artificial Intelligence now assists in planning efficient, safer climbing
+												routes with terrain analysis.</p>
 										</div>
 									</div>
 								</div>
@@ -1584,7 +1570,9 @@
 				</div>
 			</section>
 
-			<footer class="page_footer ds s-overlay s-parallax s-pt-80 s-pb-30 s-pb-md-65 s-pt-md-120 s-pt-lg-135 s-pb-xl-110 c-mb-20 c-gutter-60">
+			<!-- This is the footer section  -->
+			<footer
+				class="page_footer ds s-overlay s-parallax s-pt-80 s-pb-30 s-pb-md-65 s-pt-md-120 s-pt-lg-135 s-pb-xl-110 c-mb-20 c-gutter-60">
 				<div class="container">
 					<div class="row">
 						<div class=" col-lg-4 text-center animate" data-animation="fadeInUp">
@@ -1599,7 +1587,8 @@
 
 								<form class="signup" action="../index.html">
 
-									<input id="mailchimp_email" name="email" type="email" class="form-control mailchimp_email text-center" placeholder="Email Address">
+									<input id="mailchimp_email" name="email" type="email"
+										class="form-control mailchimp_email text-center" placeholder="Email Address">
 
 									<button type="submit" class="btn btn-outline-maincolor mt-30">
 										Subscribe
@@ -1616,33 +1605,38 @@
 								<a href="index.html" class="logo flex-column text-center pb-0">
 									<img src="images/logo.png" alt="logo">
 								</a>
-								<p>We are one of San Diego's most active social groups. Every month we create a variety of fun & interesting events.</p>
+								<p>We are one of San Diego's most active social groups. Every month we create a variety
+									of fun & interesting events.</p>
 								<ul class="mb-10">
 									<li class="icon-inline">
 										<div class="icon-styled icon-top color-main fs-14">
 											<i class="fa fa-map-marker"></i>
 										</div>
-										<p>192 Lemke Stream, San Diego, USA</p>
+										<p>192 Wuji district, FCT Abuja, Nigeria</p>
 									</li>
 									<li class="icon-inline">
 										<div class="icon-styled icon-top color-main fs-14">
 											<i class="fa fa-phone"></i>
 										</div>
-										<p>+8 (800) 247 2698 (operator)</p>
+										<p>+234 8004 247 698 (operator)</p>
 									</li>
 									<li class="icon-inline">
 										<div class="icon-styled icon-top color-main fs-14">
 											<i class="fa fa-pencil"></i>
 										</div>
 										<p>
-											<a href="#"><span class="__cf_email__" data-cfemail="4b26243e253f2238143f39223b0b2e332a263b272e65282426">[email&#160;protected]</span></a>
+											<a href="#"><span class="__cf_email__"
+													data-cfemail="4b26243e253f2238143f39223b0b2e332a263b272e65282426">[email&#160;protected]</span></a>
 										</p>
 									</li>
 								</ul>
 								<span class="social-icons">
-									<a href="#" class="fa fa-facebook bg-light border-icon rounded-icon" title="facebook"></a>
-									<a href="#" class="fa fa-twitter bg-light border-icon rounded-icon" title="twitter"></a>
-									<a href="#" class="fa fa-google bg-light border-icon rounded-icon" title="google"></a>
+									<a href="#" class="fa fa-facebook bg-light border-icon rounded-icon"
+										title="facebook"></a>
+									<a href="#" class="fa fa-twitter bg-light border-icon rounded-icon"
+										title="twitter"></a>
+									<a href="#" class="fa fa-google bg-light border-icon rounded-icon"
+										title="google"></a>
 								</span>
 							</div>
 						</div>
@@ -1658,13 +1652,15 @@
 				</div>
 			</footer>
 
+			<!-- End notes section  -->
 			<section class="page_copyright ls s-py-5">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="divider-20 d-none d-lg-block"></div>
 						<div class="divider-10 d-none d-md-block"></div>
 						<div class="col-md-12 text-center">
-							<p>&copy; Copyright <span class="copyright_year">2018</span> All Rights Reserved</p>
+							<p>&copy; 2025 <span class="copyright_year">Mountaineering Guide. </span> All Rights
+								Reserved</p>
 						</div>
 						<div class="divider-20 d-none d-lg-block"></div>
 						<div class="divider-10 d-none d-md-block"></div>
@@ -1677,21 +1673,25 @@
 	</div><!-- eof #canvas -->
 
 
-	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/compressed.js"></script>
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="js/compressed.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/switcher.js"></script>
 
 
 	<!-- FINAL TOUCHES  -->
+	<div id="ticker" class="ticker" style="background:#383838; color:#fff; padding:10px; opacity:1;">
+		<i class="fa-solid fa-location-dot"></i> <span id="location">Loading...</span> |
+		<i class="fa-solid fa-clock"></i> <span id="time">Loading...</span>
+	  </div>
+	  
 
-	<div id="ticker" class="ticker"></div>
 
-	<!-- <script>
-		let count = localStorage.getItem("visitorCount") || 0;
-		count++;
-		localStorage.setItem("visitorCount", count);
-		document.getElementById("visitorCount").textContent = `Visitors: ${count}`;
-	  </script> -->
+
+
+
+
+	<script src="https://kit.fontawesome.com/86dc3a37f6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,30 @@
+*{
+    margin: 10px;
+}
+
+.header-paragraphs {
+    color: #fcc465;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: -36px;
+	margin-top: 5px;
+	position: relative;
+	text-transform: uppercase;
+	z-index: 2;
+}
+.nested {
+    font-size: 120px;
+	font-weight: bolder;
+	left: 80px;
+	opacity: 0.05;
+	position: absolute;
+	text-transform: uppercase;
+	top: -18px;
+	z-index: -1;
+    font-size: 80px;
+    /* margin-top: 35px; */
+		
+}
+.adds-on{
+    margin-top: 30px;
+}
